@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: backend-db
+    ports:
+      - 5441:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+
+  redis:
+    image: redis:latest
+    container_name: backend-redis
+    ports:
+      - 6381:6379
