@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlmodel import Session
 # from typing import Optional
+import json
 from loguru import logger
 from app.models.evaluation import ResultResponse, Evaluation, EvaluationStatus, EvaluationResult
 from app.database import get_session
@@ -37,11 +38,23 @@ async def get_evaluation_result(
             logger.info(f"Returning completed result for {evaluation_id}")
             
             # Convert result dict to EvaluationResult model
-            result_data = evaluation.result.copy()
+            # result_data = evaluation.result.copy()
+            result_data = (
+                json.loads(evaluation.result)
+                if isinstance(evaluation.result, str)
+                else evaluation.result
+            )
             
             # Ensure cv_extraction is properly structured
+            # if evaluation.cv_extraction:
+            #     result_data["cv_extraction"] = evaluation.cv_extraction
+
             if evaluation.cv_extraction:
-                result_data["cv_extraction"] = evaluation.cv_extraction
+                result_data["cv_extraction"] = (
+                    json.loads(evaluation.cv_extraction)
+                    if isinstance(evaluation.cv_extraction, str)
+                    else evaluation.cv_extraction
+                )
             
             response_data["result"] = EvaluationResult(**result_data)
             

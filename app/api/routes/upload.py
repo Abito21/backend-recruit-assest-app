@@ -34,7 +34,7 @@ async def upload_files(
         project_content = await file_processor.extract_text(project_file)
         
         # Get available job templates for selection
-        job_templates = session.exec(select(JobTemplate).where(JobTemplate.is_active == True)).all()
+        job_templates = session.exec(select(JobTemplate).where(JobTemplate.is_active == True)).all() # noqa
         
         response = UploadResponse(
             message="Files uploaded and processed successfully",
@@ -67,7 +67,7 @@ async def get_job_templates(session: Session = Depends(get_session)):
     """Get all available job templates"""
     
     try:
-        templates = session.exec(select(JobTemplate).where(JobTemplate.is_active == True)).all()
+        templates = session.exec(select(JobTemplate).where(JobTemplate.is_active == True)).all() # noqa
         
         return [
             {
