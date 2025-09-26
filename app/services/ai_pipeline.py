@@ -40,6 +40,7 @@ class AIPipeline:
 
         Extract the following information and return as valid JSON:
         {{
+            "fullname": "full candidate name from CV",
             "email": "candidate email address",
             "phone": "phone number with country code if available",
             "address": "full address or city/country",

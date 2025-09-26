@@ -1,15 +1,15 @@
-Johno Doety
-AI Engineer
+John Doe
+Software Engineer
 john.doe@email.com
-+623456xxx
++1234567890
 
 Experience:
 - 5 years Python development
-- FastAPI, Django, Flask frameworks
-- AWS, Docker, PostgreSQL, ChromaDB
+- FastAPI, Django frameworks
+- AWS, Docker, PostgreSQL
 - AI/ML integration experience
 
-Skills: Python, JavaScript, React, PostgreSQL, AWS, Docker, FastAPI, OpenAI, PHP, Azure
+Skills: Python, JavaScript, React, PostgreSQL, AWS, Docker, FastAPI, OpenAI
 
 Projects:
 - Built AI-powered resume evaluator

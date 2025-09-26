@@ -35,3 +35,4 @@ WHERE jobtemplate.id = %(pk_1)s]
 (Background on this error at: https://sqlalche.me/e/20/f405)
 2025-09-26 11:31:30 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for a4b15d22-e82a-4773-83a6-089a8d315697: 'str' object has no attribute 'copy'
 2025-09-26 11:32:50 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for a4b15d22-e82a-4773-83a6-089a8d315697: 'str' object has no attribute 'copy'
+2025-09-26 13:01:14 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for 0e86de00-b772-40f0-9c9b-19ed84938047: 'str' object has no attribute 'copy'
