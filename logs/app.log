@@ -1,0 +1,194 @@
+2025-09-25 15:55:53 | INFO     | app.main:lifespan:20 - Starting AI Resume Evaluator API...
+2025-09-25 15:55:53 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-25 15:55:53 | INFO     | app.database:init_default_data:122 - Initializing default job templates
+2025-09-25 15:55:53 | SUCCESS  | app.database:init_default_data:129 - Added 3 default job templates
+2025-09-25 15:55:53 | SUCCESS  | app.main:lifespan:29 - Application startup completed
+2025-09-25 15:57:31 | INFO     | app.main:lifespan:38 - Shutting down AI Resume Evaluator API...
+2025-09-25 16:03:46 | INFO     | app.main:lifespan:21 - Starting AI Resume Evaluator API...
+2025-09-25 16:03:47 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-25 16:03:47 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-25 16:03:47 | SUCCESS  | app.main:lifespan:30 - Application startup completed
+2025-09-25 16:04:14 | ERROR    | app.main:health_check:88 - Health check failed: Not an executable object: 'SELECT 1'
+2025-09-25 16:07:24 | ERROR    | app.api.routes.upload:get_job_template:110 - Error fetching job template 1: (psycopg2.errors.UndefinedFunction) operator does not exist: character varying = integer
+LINE 3: WHERE jobtemplate.id = 1
+                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT jobtemplate.id AS jobtemplate_id, jobtemplate.title AS jobtemplate_title, jobtemplate.category AS jobtemplate_category, jobtemplate.description AS jobtemplate_description, jobtemplate.requirements AS jobtemplate_requirements, jobtemplate.is_active AS jobtemplate_is_active, jobtemplate.created_at AS jobtemplate_created_at 
+FROM jobtemplate 
+WHERE jobtemplate.id = %(pk_1)s]
+[parameters: {'pk_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-25 16:09:54 | INFO     | app.main:lifespan:39 - Shutting down AI Resume Evaluator API...
+2025-09-25 16:10:01 | INFO     | app.main:lifespan:21 - Starting AI Resume Evaluator API...
+2025-09-25 16:10:01 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-25 16:10:01 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-25 16:10:01 | SUCCESS  | app.main:lifespan:30 - Application startup completed
+2025-09-25 16:10:50 | ERROR    | app.main:health_check:88 - Health check failed: Not an executable object: 'SELECT 1'
+2025-09-25 16:11:09 | INFO     | app.main:lifespan:39 - Shutting down AI Resume Evaluator API...
+2025-09-25 16:15:28 | INFO     | app.main:lifespan:21 - Starting AI Resume Evaluator API...
+2025-09-25 16:15:28 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-25 16:15:28 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-25 16:15:28 | SUCCESS  | app.main:lifespan:30 - Application startup completed
+2025-09-25 17:38:29 | INFO     | app.main:lifespan:39 - Shutting down AI Resume Evaluator API...
+2025-09-25 19:37:21 | INFO     | app.main:lifespan:21 - Starting AI Resume Evaluator API...
+2025-09-25 19:37:25 | ERROR    | app.database:create_db_and_tables:19 - Failed to create database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 19:37:25 | ERROR    | app.main:lifespan:33 - Startup failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 19:39:59 | INFO     | app.main:lifespan:21 - Starting AI Resume Evaluator API...
+2025-09-25 19:39:59 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-25 19:39:59 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-25 19:39:59 | SUCCESS  | app.main:lifespan:30 - Application startup completed
+2025-09-25 19:42:25 | ERROR    | app.main:health_check:88 - Health check failed: Not an executable object: 'SELECT 1'
+2025-09-25 19:44:30 | INFO     | app.main:lifespan:39 - Shutting down AI Resume Evaluator API...
+2025-09-26 08:18:45 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 08:18:45 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 08:18:45 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 08:18:45 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 08:20:19 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: test_cv.txt, Project: test_project.txt
+2025-09-26 08:20:19 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-09-26 08:20:19 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_cv.txt (text/plain)
+2025-09-26 08:20:19 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 404 characters from test_cv.txt
+2025-09-26 08:20:19 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-09-26 08:20:19 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_project.txt (text/plain)
+2025-09-26 08:20:19 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 730 characters from test_project.txt
+2025-09-26 08:20:19 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-09-26 08:25:10 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: test_cv.txt, Project: test_project.txt
+2025-09-26 08:25:10 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-09-26 08:25:10 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_cv.txt (text/plain)
+2025-09-26 08:25:10 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 389 characters from test_cv.txt
+2025-09-26 08:25:10 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-09-26 08:25:10 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_project.txt (text/plain)
+2025-09-26 08:25:10 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 709 characters from test_project.txt
+2025-09-26 08:25:11 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-09-26 08:25:47 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 08:25:47 | ERROR    | app.api.routes.evaluate:start_evaluation:83 - Error starting evaluation: (psycopg2.errors.UndefinedFunction) operator does not exist: character varying = integer
+LINE 3: WHERE jobtemplate.id = 1
+                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT jobtemplate.id AS jobtemplate_id, jobtemplate.title AS jobtemplate_title, jobtemplate.category AS jobtemplate_category, jobtemplate.description AS jobtemplate_description, jobtemplate.requirements AS jobtemplate_requirements, jobtemplate.is_active AS jobtemplate_is_active, jobtemplate.created_at AS jobtemplate_created_at 
+FROM jobtemplate 
+WHERE jobtemplate.id = %(pk_1)s]
+[parameters: {'pk_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-26 08:47:07 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 08:47:27 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 08:47:27 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 08:47:27 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 08:47:27 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 08:49:22 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 08:52:49 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 08:53:00 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 08:53:00 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 08:53:00 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 08:53:00 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 09:02:40 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 09:08:04 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 09:08:04 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 09:08:04 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 09:08:04 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 09:08:46 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 09:08:46 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 09:08:46 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: e0fcf9dc-53ee-4730-8d6a-49b985bc2e54
+2025-09-26 09:08:46 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: e9431ebb-2075-4d1e-9d38-f11aec998187
+2025-09-26 09:13:34 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 09:13:44 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 09:13:44 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 09:13:44 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 09:13:44 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 09:13:48 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 09:27:29 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 09:27:30 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 09:27:30 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 09:27:30 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 09:28:28 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 09:28:28 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 09:28:28 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 68a42d4a-63dd-485c-83ff-801e0e2ee3dd
+2025-09-26 09:28:29 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 2350331e-0ed8-4467-8353-dbee4677c879
+2025-09-26 09:41:46 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 09:47:45 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 09:47:45 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 09:47:45 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 09:47:45 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 09:48:00 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 09:48:00 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 09:48:00 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 1175f7e4-7009-44fd-a0b4-7330c6983672
+2025-09-26 09:48:00 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 33f5af00-e64a-41bb-9941-1bb113f0a9c3
+2025-09-26 09:53:14 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 09:55:22 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 09:55:22 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 09:55:22 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 09:55:22 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 09:58:18 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 10:19:04 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 10:19:04 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 10:19:05 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 10:19:05 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 10:20:48 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 10:48:40 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 10:48:40 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 10:48:40 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 10:48:40 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 10:49:19 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 10:49:19 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 10:49:19 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 06f1b14c-afa1-45fa-b583-a61cd957cd19
+2025-09-26 10:49:19 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: a0a59cd0-8023-4e26-889b-a3ea9e5e162e
+2025-09-26 10:50:20 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 10:57:00 | INFO     | app.main:lifespan:25 - Starting AI Resume Evaluator API...
+2025-09-26 10:57:00 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 10:57:00 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 10:57:00 | SUCCESS  | app.main:lifespan:34 - Application startup completed
+2025-09-26 11:09:39 | INFO     | app.main:lifespan:43 - Shutting down AI Resume Evaluator API...
+2025-09-26 11:12:08 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 11:12:09 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 11:12:09 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 11:12:09 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 11:14:22 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 11:14:22 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 11:14:22 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 147bf30c-5bd8-491c-9d4f-1d39b47f2258
+2025-09-26 11:14:22 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 42da4678-4caf-4e80-b7f3-0e5a6811d897
+2025-09-26 11:21:05 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 11:25:03 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 11:25:04 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 11:25:04 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 11:25:04 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 11:26:43 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 11:26:43 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 11:26:43 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: a4b15d22-e82a-4773-83a6-089a8d315697
+2025-09-26 11:26:43 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: d584f1ed-76bd-4d41-b6b5-61c4baafaa91
+2025-09-26 11:31:30 | INFO     | app.api.routes.result:get_evaluation_result:18 - Fetching result for evaluation: a4b15d22-e82a-4773-83a6-089a8d315697
+2025-09-26 11:31:30 | INFO     | app.api.routes.result:get_evaluation_result:37 - Returning completed result for a4b15d22-e82a-4773-83a6-089a8d315697
+2025-09-26 11:31:30 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for a4b15d22-e82a-4773-83a6-089a8d315697: 'str' object has no attribute 'copy'
+2025-09-26 11:32:39 | INFO     | app.api.routes.result:get_evaluation_result:18 - Fetching result for evaluation: "a4b15d22-e82a-4773-83a6-089a8d315697"
+2025-09-26 11:32:46 | INFO     | app.api.routes.result:get_evaluation_result:18 - Fetching result for evaluation: {evaluation_id}
+2025-09-26 11:32:50 | INFO     | app.api.routes.result:get_evaluation_result:18 - Fetching result for evaluation: a4b15d22-e82a-4773-83a6-089a8d315697
+2025-09-26 11:32:50 | INFO     | app.api.routes.result:get_evaluation_result:37 - Returning completed result for a4b15d22-e82a-4773-83a6-089a8d315697
+2025-09-26 11:32:50 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for a4b15d22-e82a-4773-83a6-089a8d315697: 'str' object has no attribute 'copy'
+2025-09-26 12:27:00 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 12:34:06 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 12:34:07 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 12:34:07 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 12:34:07 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 12:34:56 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: test_cv.txt, Project: test_project.txt
+2025-09-26 12:34:56 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-09-26 12:34:56 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_cv.txt (text/plain)
+2025-09-26 12:34:56 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 404 characters from test_cv.txt
+2025-09-26 12:34:56 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-09-26 12:34:56 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_project.txt (text/plain)
+2025-09-26 12:34:56 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 730 characters from test_project.txt
+2025-09-26 12:34:56 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-09-26 12:35:29 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 12:35:29 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 12:35:29 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: c48775c5-9147-44fe-9abe-78512cf47c52
+2025-09-26 12:35:29 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 65ea95ec-1f57-4cfa-b715-4bebe006279d
+2025-09-26 12:36:35 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...

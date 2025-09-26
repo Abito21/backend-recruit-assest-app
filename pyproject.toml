@@ -1,22 +1,37 @@
 [project]
-name = "backend-app"
+name = "backend-recruit-assest-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI Recruit Assestment App"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "aiofiles>=24.1.0",
     "alembic>=1.16.5",
+    "bson>=0.5.10",
     "celery>=5.5.3",
     "chromadb>=1.1.0",
     "fastapi[standard]>=0.117.1",
+    "langfuse>=3.5.0",
     "loguru>=0.7.3",
     "mistralai>=1.9.10",
     "openai>=1.109.1",
     "psycopg2-binary>=2.9.10",
     "pydantic-settings>=2.11.0",
+    "pypdf2>=3.0.1",
+    "python-docx>=1.2.0",
+    "python-multipart>=0.0.20",
     "redis>=6.4.0",
     "ruff>=0.13.1",
+    "scalar-fastapi>=1.4.2",
     "sqlmodel>=0.0.25",
     "tavily-python>=0.7.12",
     "uvicorn>=0.37.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.9.0",
+    "httpx>=0.28.1",
+    "pytest>=8.4.2",
+    "ruff>=0.13.1",
 ]

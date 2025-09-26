@@ -1,0 +1,37 @@
+2025-09-25 16:04:14 | ERROR    | app.main:health_check:88 - Health check failed: Not an executable object: 'SELECT 1'
+2025-09-25 16:07:24 | ERROR    | app.api.routes.upload:get_job_template:110 - Error fetching job template 1: (psycopg2.errors.UndefinedFunction) operator does not exist: character varying = integer
+LINE 3: WHERE jobtemplate.id = 1
+                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT jobtemplate.id AS jobtemplate_id, jobtemplate.title AS jobtemplate_title, jobtemplate.category AS jobtemplate_category, jobtemplate.description AS jobtemplate_description, jobtemplate.requirements AS jobtemplate_requirements, jobtemplate.is_active AS jobtemplate_is_active, jobtemplate.created_at AS jobtemplate_created_at 
+FROM jobtemplate 
+WHERE jobtemplate.id = %(pk_1)s]
+[parameters: {'pk_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-25 16:10:50 | ERROR    | app.main:health_check:88 - Health check failed: Not an executable object: 'SELECT 1'
+2025-09-25 19:37:25 | ERROR    | app.database:create_db_and_tables:19 - Failed to create database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 19:37:25 | ERROR    | app.main:lifespan:33 - Startup failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5441 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 19:42:25 | ERROR    | app.main:health_check:88 - Health check failed: Not an executable object: 'SELECT 1'
+2025-09-26 08:25:47 | ERROR    | app.api.routes.evaluate:start_evaluation:83 - Error starting evaluation: (psycopg2.errors.UndefinedFunction) operator does not exist: character varying = integer
+LINE 3: WHERE jobtemplate.id = 1
+                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT jobtemplate.id AS jobtemplate_id, jobtemplate.title AS jobtemplate_title, jobtemplate.category AS jobtemplate_category, jobtemplate.description AS jobtemplate_description, jobtemplate.requirements AS jobtemplate_requirements, jobtemplate.is_active AS jobtemplate_is_active, jobtemplate.created_at AS jobtemplate_created_at 
+FROM jobtemplate 
+WHERE jobtemplate.id = %(pk_1)s]
+[parameters: {'pk_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-26 11:31:30 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for a4b15d22-e82a-4773-83a6-089a8d315697: 'str' object has no attribute 'copy'
+2025-09-26 11:32:50 | ERROR    | app.api.routes.result:get_evaluation_result:64 - Error fetching result for a4b15d22-e82a-4773-83a6-089a8d315697: 'str' object has no attribute 'copy'
