@@ -26,7 +26,6 @@ class Settings(BaseSettings):
 
     OPENAI_API_KEY: str = ""
     MISTRAL_API_KEY: str = ""
-    TAVILY_API_KEY: str = ""
 
     LANGFUSE_SECRET_KEY: str = ""
     LANGFUSE_PUBLIC_KEY: str = ""
@@ -35,6 +34,8 @@ class Settings(BaseSettings):
     CHROMA_PERSIST_DIRECTORY: str = "./chroma_db"
     DEBUG: bool = False
     SECRET_KEY: str = "your-secret-key"
+    UPLOAD_FOLDER: str = "./uploads"
+    MAX_FILE_SIZE: int = 10 * 1024 * 1024  # 10MB
     
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
