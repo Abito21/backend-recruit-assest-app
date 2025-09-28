@@ -306,8 +306,6 @@ Successfully delivered a production-ready AI resume evaluation system that demon
 
 The system effectively automates the resume screening process while providing detailed, actionable feedback that helps both recruiters and candidates improve their processes.
 
-Repository: [GitHub Repository Link]
+Repository: [GitHub Repository Link](https://github.com/Abito21/backend-recruit-assest-app)
 
-Documentation: [API Documentation Link]
-
-Demo: [Live Demo Link]
+Demo (Indonesia Version): [Live Demo Link](https://youtu.be/vnhy1nlDHRM)

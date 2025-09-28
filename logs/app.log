@@ -302,3 +302,22 @@ WHERE jobtemplate.id = %(pk_1)s]
 2025-09-26 15:17:08 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: bbbcf85d-45fc-49ef-a390-fd7dd0478d0e
 2025-09-26 15:17:09 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for bbbcf85d-45fc-49ef-a390-fd7dd0478d0e
 2025-09-26 15:18:56 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-26 22:52:06 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-26 22:52:07 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-26 22:52:07 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-26 22:52:07 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-26 22:54:24 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: test_cv.txt, Project: test_project_john.txt
+2025-09-26 22:54:24 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-09-26 22:54:24 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_cv.txt (text/plain)
+2025-09-26 22:54:24 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 431 characters from test_cv.txt
+2025-09-26 22:54:24 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-09-26 22:54:24 | INFO     | app.services.file_processor:extract_text:19 - Processing file: test_project_john.txt (text/plain)
+2025-09-26 22:54:24 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 2229 characters from test_project_john.txt
+2025-09-26 22:54:24 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-09-26 22:56:35 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-26 22:56:35 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-26 22:56:35 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: da5e3ed1-af49-4461-8636-7fee83233610
+2025-09-26 22:56:36 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 28526ccf-99ed-41ea-a7a1-2399613c63d5
+2025-09-26 22:57:50 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: da5e3ed1-af49-4461-8636-7fee83233610
+2025-09-26 22:57:50 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for da5e3ed1-af49-4461-8636-7fee83233610
+2025-09-26 22:59:42 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
