@@ -1,0 +1,109 @@
+ABID JULIANT INDRASWARA
+AI/ML Engineer • Data Engineer • Business Intelligence Specialist
+
+CONTACT INFORMATION
+Email: abid@gmail.com
+Phone: +62 88X XXXX XXXX 
+Location: Central Java, Indonesia
+LinkedIn: linkedin.com/in/abid-juliant-indraswara
+GitHub: github.com/Abito21
+Portfolio: abidportfolio-web.vercel.app
+
+PROFESSIONAL SUMMARY
+Results-driven AI/ML Engineer with 3+ years of experience in Business Intelligence, data pipeline validation, and machine learning project development. Proven expertise in building and testing large-scale data pipelines (>1TB), implementing MLOps practices, and deploying AI models using APIs and Docker. Specialized in Natural Language Processing, Computer Vision, and data integration from multiple sources while ensuring data quality for analytics and AI applications. Strong background in automating testing processes with 30% efficiency improvements and mentoring technical teams.
+
+TECHNICAL SKILLS
+AI/ML & Data Science: Machine Learning, Deep Learning, NLP, Computer Vision, LLM, Agentic AI, AI Agent, RAG, MCP
+
+Data Engineering & BI: ETL Pipelines, Data Warehousing, Power BI, Azure Synapse Analytics, Microsoft Fabric, SQL Server, PostgreSQL, MySQL, Apache Spark
+
+Programming & Development: Python, SQL, JavaScript, TypeScript, Git, REST APIs, WebSocket
+
+MLOps & Deployment: Docker, MLFlow, FastAPI, CI/CD
+
+ML/AI Frameworks: TensorFlow, PyTorch, YOLO Ultralytics, Scikit-learn, Pandas, NumPy, OpenCV, Keras, NLTK, spaCy, Hugging Face Transformers
+
+Web Technologies: Bun.js, Node.js, React, React Native, Express.js, HTML5, CSS3, Astro.js, Next.js, Flask, Django
+
+PROFESSIONAL EXPERIENCE
+
+Software Quality Assurance - Business Intelligence
+PT Astra International, Tbk
+August 2022 - Present
+
+Key Responsibilities:
+- Validate and ensure data integrity for large-scale datasets (>1TB) in enterprise data marts, maintaining 99.9% data accuracy
+- Collaborate with Data Engineering teams to optimize data flow from raw sources to BI dashboards, reducing processing time by 25%
+- Perform comprehensive testing and validation of BI dashboards in Power BI and MicroStrategy, ensuring visual consistency and data accuracy across 50+ enterprise reports
+- Automated data testing processes using Python, Jest, and WebdriverIO, achieving 30% improvement in testing efficiency and reducing manual testing time
+- Utilize Microsoft Synapse Analytics, Fabric, Apache Impala, and SQL Server for advanced data testing and validation workflows
+- Implement data quality monitoring frameworks and establish data validation standards for enterprise BI solutions
+
+Mobile App Development Mentor - React Native
+Progate x Kominfo Digital Talent (Freelance)
+May 2024 - July 2024
+
+Key Responsibilities:
+- Delivered comprehensive training programs on JavaScript, Git, React, React Native, API Integration, and TypeScript
+- Guided participants through hands-on mobile application development from basic concepts to final projects (Movie App)
+- Provided mentorship and code reviews, resulting in 95% project completion rate among participants
+
+Web Development Mentor - React Native
+Progate x Kominfo Digital Talent (Freelance)
+April 2023 - June 2023
+
+Key Responsibilities:
+- Conducted online training sessions on HTML, CSS, JavaScript, and Node.js for government-sponsored digital literacy program
+- Mentored participants in building functional web applications through practical, hands-on projects
+- Developed curriculum and assessment materials for web development fundamentals
+
+EDUCATION
+Bachelor of Electrical Engineering
+Universitas Tidar
+August 2018 - July 2022
+GPA: 3.70/4.00
+
+Concentration: Data Systems, Control Systems, and Intelligent Computing
+Research: Computer Vision for vehicle detection systems, resulting in HKI certification
+Activities: National technology competitions - GEMASTIK (Data Mining) and KRTI (Autonomous Drone)
+
+KEY PROJECTS & ACHIEVEMENTS
+
+COVID-19 Public Sentiment Analysis System
+GEMASTIK National Competition
+July 2021 - October 2021
+- Led team in national ICT competition (Puspresnas) developing NLP-based sentiment analysis system
+- Built machine learning pipeline using Python, NLTK, and scikit-learn for processing public COVID-19 reviews
+- Technologies: Python, NLTK, scikit-learn, NLP, Sentiment Analysis
+
+Autonomous Delivery Drone System
+KRTI National Competition - VTOL Division
+May 2021 - November 2021
+- Designed and coordinated development of autonomous drone prototype for goods delivery missions
+- Implemented Computer Vision algorithms for object detection and autonomous navigation
+- Successfully passed national proposal selection phase and advanced to prototype development
+- Technologies: Computer Vision, Object Detection, Autonomous Systems, Drone Development
+
+LEADERSHIP EXPERIENCE
+
+Lead - Google Developer Student Clubs
+Universitas Tidar
+July 2021 - June 2022
+- Led officially Google-recognized campus developer community
+- Organized workshops and mentoring sessions on web development, mobile development, cloud computing, and AI
+- Facilitated knowledge sharing and skill development programs
+
+Academic Division Head
+Electrical Engineering Student Association, Universitas Tidar
+February 2020 - July 2020
+- Managed academic programs including training, seminars, and scientific discussions
+- Coordinated student achievement development initiatives in academic and research areas
+
+CERTIFICATIONS & ACHIEVEMENTS
+- HKI Certification for Computer Vision vehicle detection system research
+- National Competition Participant: GEMASTIK (Data Mining)
+- National Competition Participant: KRTI (Autonomous Drone)
+- Google Developer Student Clubs Official Recognition
+- 95% mentoring success rate in government digital literacy programs
+- 30% efficiency improvement in automated testing processes
+- 99.9% data accuracy maintenance in enterprise BI systems

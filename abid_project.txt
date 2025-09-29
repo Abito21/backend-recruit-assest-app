@@ -1,0 +1,214 @@
+Study Case Submission
+
+1.  Title : AI Resume & Technical Implementation Report Evaluation
+    System – Backend Service
+
+2.  Candidate Information
+
+-   Full Name : Abid Juliant Indraswara
+
+-   Email Address : abidjuliant@gmail.com
+
+3.  Repository Link :
+    https://github.com/Abito21/backend-recruit-assest-app
+
+4.  Approach & Design (Main Section)
+
+-   Initial Plan
+
+  Tujuan utama dari sistem ini adalah mengotomatiskan proses evaluasi
+  resume (CV) dan laporan proyek kandidat untuk posisi teknis. Saya
+  memecah requirement menjadi beberapa komponen inti:
+
+-   Backend API Service → menerima input CV/proyek dan mengembalikan
+      hasil evaluasi.
+
+-   Integrasi AI (GPT-4) → melakukan parsing, evaluasi, dan pemberian
+      skor terstruktur.
+
+-   Database Persistence → menyimpan hasil evaluasi agar bisa di-query,
+      ditracking, dan dilakukan audit trail.
+
+-   Background Task Processing → memanfaatkan Celery + Redis untuk task
+      yang lama/berat.
+
+-   Observability & Monitoring → memastikan sistem bisa dipantau, error
+      dapat ditracing, serta hasil bisa diaudit.
+
+  Key Assumptions & Scope
+
+-   File input hanya mendukung format TXT.
+
+-   Evaluasi difokuskan pada skills, pengalaman, proyek, dan kecocokan
+    dengan job requirement, bukan end-to-end recruitment system.
+
+-   Model LLM yang digunakan adalah OpenAI GPT-4 karena kualitas
+    reasoning dan stabilitas output yang tinggi.
+
+-   System & Database Design
+
+  Arsitektur Teknis
+
+-   Framework: FastAPI dengan async/await → ringan, cepat, terintegrasi
+    OpenAPI.
+
+-   Database: PostgreSQL + SQLModel ORM untuk type safety.
+
+-   Message Queue: Redis + Celery → task antrian, retry, status
+    tracking.
+
+-   Vector Database: ChromaDB → untuk semantic search & RAG.
+
+-   LLM Integration: GPT-4 dengan prompt engineering + chaining.
+
+-   Observability: Loguru (logging), Langfuse (tracking LLM usage).
+
+  API Endpoints
+
+-   POST /api/upload → upload & validasi dokumen.
+
+-   POST /api/evaluate → inisiasi evaluasi asynchronous.
+
+-   GET /api/result/{id} → polling status evaluasi.
+
+-   GET /api/job-templates → manajemen template pekerjaan.
+
+  Database Schema
+
+-   job_template → menyimpan deskripsi pekerjaan & bobot scoring.
+
+-   evaluation → status evaluasi (QUEUED → PROCESSING →
+    COMPLETED/FAILED).
+
+-   result (JSON) → skor & feedback hasil evaluasi.
+
+  Job Queue & Long-running Task Handling
+
+-   Celery worker menjalankan evaluasi dengan memanggil GPT-4.
+
+-   Redis menjadi message broker & store untuk tracking progress.
+
+-   Status dapat dipantau via endpoint result.
+
+-   LLM Integration
+
+  Pemilihan Model:
+
+-   GPT-4-mini dipilih karena unggul dalam memahami konteks panjang,
+      reasoning kompleks, dan lebih konsisten daripada GPT-3.5 serta
+      harga terjangkau ditambah integrasi nya cukup mudah.
+
+  []
+
+  Prompt Chaining & Design
+
+1.  CV Structure Extraction → parsing data unstructured menjadi JSON.
+
+2.  Job Context Retrieval → pencarian konteks dengan RAG dari ChromaDB.
+
+3.  CV-Job Matching → scoring dengan bobot:
+
+    a.  Technical Skills 40%
+
+    b.  Experience 30%
+
+    c.  Achievements 20%
+
+    d.  Culture Fit 10%
+
+4.  Project Evaluation → evaluasi multi-kriteria dengan refinement loop.
+
+  RAG Strategy
+
+-   Embedding untuk job description & CV.
+
+-   Semantic search (ChromaDB) → injeksi konteks relevan.
+
+-   Resilience & Error Handling
+
+    -   Retry dengan exponential backoff jika GPT-4 API gagal.
+
+    -   Circuit breaker untuk mencegah cascading failure.
+
+    -   Graceful degradation → fallback response default bila LLM gagal.
+
+    -   Comprehensive logging → Loguru untuk structured log.
+
+    -   Observability → Langfuse untuk tracking semua request & response
+        LLM.
+
+-   Edge Cases Considered
+
+    -   File tidak valid (format salah atau ukuran terlalu besar).
+
+    -   CV kosong atau rusak → API mengembalikan error terstruktur.
+
+    -   Job template tidak ditemukan → validasi di endpoint.
+
+    -   API GPT-4 error (timeout, rate-limit) → retry otomatis.
+
+    -   Input multilingual (Indonesia + Inggris).
+
+5.  Results & Reflection
+
+-   Outcome
+
+    -   Sistem berhasil memproses alur penuh dari upload → evaluasi →
+        hasil scoring.
+
+    -   Evaluasi asynchronous memastikan backend tetap responsif
+        meskipun task evaluasi lama.
+
+    -   Hasil berupa feedback actionable yang membantu recruiter maupun
+        kandidat..
+
+-   Evaluation of Results
+
+    -   Skor stabil dan konsisten karena ada pipeline structured
+        extraction + RAG.
+
+    -   GPT-4 memberikan reasoning yang dapat ditelusuri, tidak sekadar
+        output angka.
+
+    -   Evaluasi terbukti scalable pada beberapa CV/proyek secara
+        paralel.
+
+-   Future Improvements
+
+    -   Dashboard web untuk monitoring evaluasi real-time.
+
+    -   Mendukung LLM open-source (Llama 3) untuk mengurangi biaya API.
+
+    -   Optimasi RAG dengan dataset lebih besar & embedding yang lebih
+        presisi.
+
+    -   Menambahkan auth & role-based access control.
+
+-   Constraints
+
+    -   Biaya API GPT-4 cukup tinggi untuk pengujian skala besar.
+
+    -   Setup observability (Langfuse + Docker) cukup kompleks.
+
+    -   Waktu terbatas untuk membangun frontend/UI.
+
+6.  Screenshots of Real Responses
+
+    -   Show real JSON response from your API using your own CV +
+        Project Report.
+
+    -   Minimum:
+
+        -   /evaluate → returns job_id + status
+
+        -   /result/:id → returns final evaluation (scores + feedback)
+
+    -   Paste screenshots or Postman/terminal logs.
+
+7.  (Optional) Bonus Work
+
+-   Integrasi observability dengan Langfuse.
+
+-   Structured logging dengan Loguru.
+
+-   Dokumentasi API otomatis dengan Scalar.
