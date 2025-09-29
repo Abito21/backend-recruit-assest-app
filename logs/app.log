@@ -321,3 +321,27 @@ WHERE jobtemplate.id = %(pk_1)s]
 2025-09-26 22:57:50 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: da5e3ed1-af49-4461-8636-7fee83233610
 2025-09-26 22:57:50 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for da5e3ed1-af49-4461-8636-7fee83233610
 2025-09-26 22:59:42 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-29 18:54:49 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-29 18:54:49 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-29 18:54:49 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-29 18:54:49 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-29 19:45:40 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-09-29 19:45:59 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-09-29 19:45:59 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-09-29 19:46:00 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-09-29 19:46:00 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-09-29 19:46:46 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-09-29 19:46:46 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-09-29 19:46:46 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 65323f7e-6948-40a2-a32e-d99cc69f98d4
+2025-09-29 19:46:46 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: be1b0369-1f4b-47e2-ac36-d4bf9f072ec2
+2025-09-29 19:50:01 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 65323f7e-6948-40a2-a32e-d99cc69f98d4
+2025-09-29 19:50:01 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for 65323f7e-6948-40a2-a32e-d99cc69f98d4
+2025-09-29 20:17:54 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: abid_cv.txt, Project: abid_project.txt
+2025-09-29 20:17:54 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-09-29 20:17:54 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_cv.txt (text/plain)
+2025-09-29 20:17:54 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5916 characters from abid_cv.txt
+2025-09-29 20:17:54 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-09-29 20:17:54 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_project.txt (text/plain)
+2025-09-29 20:17:54 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5857 characters from abid_project.txt
+2025-09-29 20:17:54 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-09-29 20:37:25 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
