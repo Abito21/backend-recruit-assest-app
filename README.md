@@ -355,4 +355,4 @@ Successfully delivered a production-ready AI resume evaluation system that demon
 
 The system effectively automates the resume screening process while providing detailed, actionable feedback that helps both recruiters and candidates improve their processes.
 
-Demo Backend Service (Indonesia Version): [Live Demo Link](https://www.youtube.com/watch?v=bDZzHV2MDyo)
+Demo Backend Service (Indonesia Version): [Video Demo Link](https://www.youtube.com/watch?v=bDZzHV2MDyo)
