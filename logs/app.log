@@ -536,3 +536,7 @@ WHERE jobtemplate.id = %(pk_1)s]
 2025-10-02 20:32:38 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
 2025-10-02 20:32:38 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
 2025-10-02 20:33:30 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-10-02 20:34:01 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-10-02 20:34:01 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-10-02 20:34:01 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-10-02 20:34:01 | SUCCESS  | app.main:lifespan:31 - Application startup completed

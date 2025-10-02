@@ -183,7 +183,7 @@ psql -h localhost -p 5441 -U postgres -c "CREATE DATABASE ai_resume;"
 
 **Container Docker Overall Looklike :**
 
-![Container](public\screenshot\Container.JPG)
+![Container](./public/screenshot/Container.JPG)
 
 ### 3. Setup Langfuse Observability
 
@@ -199,7 +199,7 @@ d. First time you access must register and then you need to provide a project na
 
 **Local Langfuse Looklike :**
 
-![Langfuse](public\screenshot\Langfuse.JPG)
+![Langfuse](./public/screenshot/Langfuse.JPG)
 
 ### 4. Configure Environment
 
@@ -307,7 +307,7 @@ uv run celery -A app.tasks.celery_tasks worker --pool=solo -c 1 --loglevel=info
 
 **Terminal Looklike :**
 
-![Terminal](public\screenshot\Terminal.JPG)
+![Terminal](/public/screenshot/Terminal.JPG)
 
 Terminal 3 - Test API:
 
@@ -323,7 +323,7 @@ curl http://localhost:8000/health
 
 **API Documentation Scalar Looklike :**
 
-![Scalar](public\screenshot\Scalar.JPG)
+![Scalar](/public/screenshot/Scalar.JPG)
 
 ### 8. Test Evaluate API Flow
 
