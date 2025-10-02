@@ -345,3 +345,194 @@ WHERE jobtemplate.id = %(pk_1)s]
 2025-09-29 20:17:54 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5857 characters from abid_project.txt
 2025-09-29 20:17:54 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
 2025-09-29 20:37:25 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...
+2025-10-02 20:09:13 | INFO     | app.main:lifespan:22 - Starting AI Resume Evaluator API...
+2025-10-02 20:09:14 | SUCCESS  | app.database:create_db_and_tables:17 - Database tables created successfully
+2025-10-02 20:09:15 | INFO     | app.database:init_default_data:131 - Database already has 3 job templates
+2025-10-02 20:09:15 | SUCCESS  | app.main:lifespan:31 - Application startup completed
+2025-10-02 20:13:09 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: abid_cv.txt, Project: abid_project.txt
+2025-10-02 20:13:09 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-10-02 20:13:09 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_cv.txt (text/plain)
+2025-10-02 20:13:09 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5916 characters from abid_cv.txt
+2025-10-02 20:13:09 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-10-02 20:13:09 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_project.txt (text/plain)
+2025-10-02 20:13:09 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5857 characters from abid_project.txt
+2025-10-02 20:13:09 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-10-02 20:15:30 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-10-02 20:15:30 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-10-02 20:15:31 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 7290520a-596d-4f43-adb7-8ba09e87704c
+2025-10-02 20:15:32 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 603e08bf-0c69-4f85-9c21-b751224e1b20
+2025-10-02 20:17:20 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 7290520a-596d-4f43-adb7-8ba09e87704c
+2025-10-02 20:17:20 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for 7290520a-596d-4f43-adb7-8ba09e87704c
+2025-10-02 20:24:40 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: abid_cv.txt, Project: abid_project.txt
+2025-10-02 20:24:40 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-10-02 20:24:40 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_cv.txt (text/plain)
+2025-10-02 20:24:40 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5916 characters from abid_cv.txt
+2025-10-02 20:24:41 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-10-02 20:24:41 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_project.txt (text/plain)
+2025-10-02 20:24:41 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5857 characters from abid_project.txt
+2025-10-02 20:24:44 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-10-02 20:25:38 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-10-02 20:25:39 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-10-02 20:25:39 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:39 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: ed63b0e5-45f5-43e0-b95e-3bb0f92b2685
+2025-10-02 20:25:39 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-10-02 20:25:39 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: AI/ML Engineer
+2025-10-02 20:25:40 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:40 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: 83e3e5f4-a4ba-464c-a55a-3fda55edb5dc
+2025-10-02 20:25:40 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:41 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still queued
+2025-10-02 20:25:41 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:41 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:43 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:43 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:25:44 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:44 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:46 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:46 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:47 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:47 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:25:48 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:48 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:50 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:50 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:25:50 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:50 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:52 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:52 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:53 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:53 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:25:54 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:55 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:56 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:56 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:25:57 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:57 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:59 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:25:59 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:25:59 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:25:59 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:26:01 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:01 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:26:02 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:26:02 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:26:03 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:03 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:26:11 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:12 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:26:12 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:26:12 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:26:14 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:14 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:26:16 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:26:16 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6284231e-9f2a-4dee-9f7e-c69a0d714434 still processing
+2025-10-02 20:26:17 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:17 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still queued
+2025-10-02 20:26:21 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:26:21 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for 6284231e-9f2a-4dee-9f7e-c69a0d714434
+2025-10-02 20:26:21 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:22 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:26 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:26 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:30 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:30 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:34 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:34 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:38 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:38 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:43 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:43 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:46 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:46 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation f0d65da3-f92a-40c8-b91e-84afef85454d still processing
+2025-10-02 20:26:54 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:26:54 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for f0d65da3-f92a-40c8-b91e-84afef85454d
+2025-10-02 20:31:24 | INFO     | app.api.routes.upload:upload_files:21 - Upload request - CV: abid_cv.txt, Project: abid_project.txt
+2025-10-02 20:31:24 | INFO     | app.api.routes.upload:upload_files:29 - Processing CV file
+2025-10-02 20:31:24 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_cv.txt (text/plain)
+2025-10-02 20:31:24 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5916 characters from abid_cv.txt
+2025-10-02 20:31:24 | INFO     | app.api.routes.upload:upload_files:33 - Processing project file
+2025-10-02 20:31:24 | INFO     | app.services.file_processor:extract_text:19 - Processing file: abid_project.txt (text/plain)
+2025-10-02 20:31:24 | SUCCESS  | app.services.file_processor:extract_text:37 - Successfully extracted 5857 characters from abid_project.txt
+2025-10-02 20:31:25 | SUCCESS  | app.api.routes.upload:upload_files:55 - File upload completed successfully
+2025-10-02 20:31:34 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-10-02 20:31:34 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: Full Stack Developer
+2025-10-02 20:31:34 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:35 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: f8250cab-cb02-4745-985c-f2059220b88e
+2025-10-02 20:31:35 | INFO     | app.api.routes.evaluate:start_evaluation:18 - Received evaluation request
+2025-10-02 20:31:35 | INFO     | app.api.routes.evaluate:start_evaluation:32 - Using job template: Full Stack Developer
+2025-10-02 20:31:35 | INFO     | app.api.routes.evaluate:start_evaluation:62 - Created evaluation record: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:35 | INFO     | app.api.routes.evaluate:start_evaluation:72 - Queued evaluation task: bdfcae02-44fb-4b3e-8742-7b7e82fd26ec
+2025-10-02 20:31:35 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:35 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:36 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:36 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:38 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:38 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:39 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:39 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:40 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:40 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:42 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:42 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:42 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:42 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:45 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:45 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:45 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:45 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:47 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:47 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:48 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:48 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:49 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:49 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:51 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:51 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:51 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:51 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:53 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:53 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:54 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:54 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:55 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:55 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:57 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:57 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:31:57 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:31:57 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:31:59 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:31:59 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:32:00 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:32:00 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:32:01 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:01 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:32:03 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:03 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:32:03 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:32:03 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation e3160a07-0a59-4cc2-9908-a753577ea9fb still processing
+2025-10-02 20:32:05 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:05 | INFO     | app.api.routes.result:get_evaluation_result:69 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still queued
+2025-10-02 20:32:06 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:32:06 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for e3160a07-0a59-4cc2-9908-a753577ea9fb
+2025-10-02 20:32:07 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:07 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:10 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:10 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:13 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:13 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:17 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:17 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:20 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:20 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:23 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:23 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:26 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:26 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:29 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:29 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:32 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:32 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:35 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:35 | INFO     | app.api.routes.result:get_evaluation_result:66 - Evaluation 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5 still processing
+2025-10-02 20:32:38 | INFO     | app.api.routes.result:get_evaluation_result:19 - Fetching result for evaluation: 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:32:38 | INFO     | app.api.routes.result:get_evaluation_result:38 - Returning completed result for 6e8b761a-f7dc-4813-9e85-d3d8c797e8b5
+2025-10-02 20:33:30 | INFO     | app.main:lifespan:40 - Shutting down AI Resume Evaluator API...

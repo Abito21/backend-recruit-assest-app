@@ -21,6 +21,39 @@ Frontend (React) ↔ FastAPI REST API ↔ AI Pipeline (LLM Chain) ↔ ChromaDB (
 Celery Workers ↔ Redis ↔ PostgreSQL
 ```
 
+### Structure Folder and File Backend
+
+```
+backend/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                 # FastAPI app
+│   ├── config.py              # Settings
+│   ├── database.py            # DB connection
+│   ├── models/
+│   │   └── evaluation.py      # SQLModel models
+│   ├── api/
+│   │   ├── routes/
+│   │   │   ├── upload.py      # POST /upload
+│   │   │   ├── evaluate.py    # POST /evaluate
+│   │   │   └── result.py      # GET /result/{id}
+│   │   └── dependencies.py
+│   ├── services/
+│   │   ├── file_processor.py  # PDF/DOCX parsing
+│   │   ├── ai_pipeline.py     # LLM chains
+│   │   ├── vector_store.py    # ChromaDB operations
+│   │   └── evaluation.py      # Core evaluation logic
+│   ├── tasks/
+│   │   └── celery_tasks.py    # Background tasks
+│   └── utils/
+│       ├── generate_id.py
+│       ├── logger.py
+│       └── helpers.py
+├── alembic/                   # DB migrations
+├── requirements.txt
+└── README.md
+```
+
 ## Technical Implementation Details
 
 ### 1. API Design & Endpoints
