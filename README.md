@@ -181,17 +181,25 @@ CREATE DATABASE ai_resume;
 psql -h localhost -p 5441 -U postgres -c "CREATE DATABASE ai_resume;"
 ```
 
+**Container Docker Overall Looklike :**
+
+![Container](public\screenshot\Container.JPG)
+
 ### 3. Setup Langfuse Observability
 
 Open langfuse documentation to setup langfuse locally in your cpu device https://langfuse.com/self-hosting/deployment/docker-compose , you can follow the instruction in that documentation or follow me
 
-a. Clone repo "git clone https://langfuse.com/self-hosting/deployment/docker-compose"
+a. Clone repo "git clone https://github.com/langfuse/langfuse.git"
 
 b. Running "docker compose up -d"
 
 c. Open "http://localhost:3000/"
 
 d. First time you access must register and then you need to provide a project name and others. Finally you will get langfuse secret key, public key and host.
+
+**Local Langfuse Looklike :**
+
+![Langfuse](public\screenshot\Langfuse.JPG)
 
 ### 4. Configure Environment
 
@@ -297,6 +305,10 @@ Terminal 2 - Celery Worker:
 uv run celery -A app.tasks.celery_tasks worker --pool=solo -c 1 --loglevel=info
 ```
 
+**Terminal Looklike :**
+
+![Terminal](public\screenshot\Terminal.JPG)
+
 Terminal 3 - Test API:
 
 You can check using terminal you can go to the *http://localhost:8000/scalar* API Documentation
@@ -308,6 +320,10 @@ curl http://localhost:8000/health
 # Should return:
 # {"status":"healthy","database":"connected","redis":"connected"}
 ```
+
+**API Documentation Scalar Looklike :**
+
+![Scalar](public\screenshot\Scalar.JPG)
 
 ### 8. Test Evaluate API Flow
 
