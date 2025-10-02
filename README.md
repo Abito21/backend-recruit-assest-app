@@ -26,7 +26,7 @@ Celery Workers ↔ Redis ↔ PostgreSQL
 ### 1. API Design & Endpoints
 Implemented RESTful API following OpenAPI specifications:
 
-- `POST /api/upload` - File processing with support for PDF, DOCX, TXT formats
+- `POST /api/upload` - File processing with support for TXT formats
 - `POST /api/evaluate` - Asynchronous evaluation initiation
 - `GET /api/result/{id}` - Status polling with real-time updates
 - `GET /api/job-templates` - Job template management
